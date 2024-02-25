@@ -135,6 +135,7 @@ namespace esphome
         enum class NonNasaCommand : uint8_t
         {
             Cmd20 = 0x20,
+            Cmd20 = 0x21,
             CmdC0 = 0xc0,
             CmdC1 = 0xc1,
             CmdC6 = 0xc6,
@@ -158,6 +159,7 @@ namespace esphome
             union
             {
                 NonNasaCommand20 command20;
+                NonNasaCommandRaw command21; // Unknown structure for now
                 NonNasaCommandC0 commandC0;
                 NonNasaCommandC1 commandC1;
                 NonNasaCommandC6 commandC6;

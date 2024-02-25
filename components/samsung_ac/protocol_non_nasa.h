@@ -135,7 +135,7 @@ namespace esphome
         enum class NonNasaCommand : uint8_t
         {
             Cmd20 = 0x20,
-            Cmd20 = 0x21,
+            Cmd21 = 0x21,
             CmdC0 = 0xc0,
             CmdC1 = 0xc1,
             CmdC6 = 0xc6,
